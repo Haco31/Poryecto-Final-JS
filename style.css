@@ -1,0 +1,50 @@
+/* Variables globales para mantener la identidad visual */
+:root {
+  --bbva-blue: #004481; /* Azul primario BBVA */
+  --bbva-navy: #043263; /* Azul oscuro para hover/botones */
+  --bbva-light-blue: #d4edfc; /* Azul claro para alertas o fondos */
+  --bbva-white: #ffffff;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family:
+    "Helvetica Neue", Helvetica, Arial, sans-serif; /* Tipografía limpia */
+  color: #333;
+}
+
+/* Encabezado y fondos institucionales */
+.bg-bbva {
+  background-color: var(--bbva-blue) !important;
+  color: var(--bbva-white) !important;
+}
+
+/* Personalización de botones al estilo BBVA */
+.btn-primary.bg-bbva {
+  background-color: var(--bbva-blue);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary.bg-bbva:hover {
+  background-color: var(--bbva-navy);
+}
+
+/* Estilo para la "pantalla" del cajero */
+#display-screen {
+  background-color: #e9ecef;
+  border-left: 5px solid var(--bbva-blue);
+  font-family:
+    "Courier New", Courier, monospace; /* Toque de terminal de cajero */
+}
+
+/* Ajustes de tarjetas */
+.card {
+  border: none;
+  border-top: 4px solid var(--bbva-blue);
+}
+
+.text-muted {
+  font-style: italic;
+  opacity: 0.7;
+}
